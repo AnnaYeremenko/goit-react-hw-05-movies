@@ -15,9 +15,6 @@ export const Wrapper = styled.div`
   padding-bottom: 12px;
   border-color: #FF6666
   color: #fff;
-  // background-color: #3f51b5;
-  // box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-  //   0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 `;
 
 export const Input = styled.input`
@@ -44,6 +41,8 @@ export const Form = styled.form`
   border: 2px solid #ff9999;
   border-radius: 3px;
   overflow: hidden;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 `;
 
 export const Button = styled.button`
