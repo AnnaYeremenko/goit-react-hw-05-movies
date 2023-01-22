@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { lazy } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { GlobalStyle } from './GlobalStyles';
 
 import { SharedLayout } from './SharedLayout/SharedLayout';
 
@@ -27,7 +28,7 @@ export const App = () => {
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
-      
+      <GlobalStyle />
       <ToastContainer />
     </div>
   );

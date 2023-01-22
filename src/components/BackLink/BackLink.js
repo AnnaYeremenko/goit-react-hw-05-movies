@@ -7,13 +7,14 @@ const StyledLink = styled(Link)`
   align-items: center;
   gap: 4px;
   padding: 8px 0;
-  color: black;
+  color: #696969;
   text-decoration: none;
   font-weight: 500;
+  list-style: none;
   text-transform: uppercase;
   margin-left: 100px;
   :hover {
-    color: orangered;
+    color: #CD5C5C;
   }
 `;
 

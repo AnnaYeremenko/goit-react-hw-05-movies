@@ -6,7 +6,7 @@ import {
   Input,
   Button,
   Label,
-} from './SearchBox';
+} from './SearchBox.styled';
 
 import { useState } from 'react';
 

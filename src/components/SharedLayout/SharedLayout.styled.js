@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 export const Link = styled(NavLink)`
   padding: 8px 16px;
-  border-radius: 4px;
+  border-radius: 7px;
   text-decoration: none;
-  color: black;
+  color: #4B0082;
   font-weight: 500;
   :last-child {
     margin-left: 20px;
@@ -15,7 +15,7 @@ export const Link = styled(NavLink)`
   }
   &.active {
     color: white;
-    background-color: orangered;
+    background-color: #DC143C;
   }
 `;
 
@@ -28,11 +28,10 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   gap: 15 px;
-  padding: 8px 40px;
+  padding: 10px 40px;
   margin-bottom: 20px;
   font-size: 20px;
-  background-color: #e6b0aa;
-  // border-bottom: 1px solid black;
+  background-color: #CD5C5C;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
   > nav {
     display: flex;

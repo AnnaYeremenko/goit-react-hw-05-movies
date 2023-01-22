@@ -4,10 +4,10 @@ import { LoaderGallery } from './Loader.styled';
 export const Loader = () => (
   <LoaderGallery>
     <ThreeDots
-      height="80"
-      width="80"
+      height="200"
+      width="200"
       radius="9"
-      color="#4fa94d"
+      color="#DDA0DD"
       ariaLabel="three-dots-loading"
       wrapperStyle={{}}
       wrapperClassName=""

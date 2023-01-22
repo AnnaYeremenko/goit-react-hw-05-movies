@@ -8,16 +8,16 @@ export const getMovies = async () => {
   try {
     const response = await axios.get(`/trending/movie/day?api_key=${KEY}`);
     if (response.data.results.length === 0) {
-      throw Error('Please, try againe!');
+      throw Error('Будь ласка, спробуйте ще раз!');
     }
     // console.log(response.data.results);
     return response.data.results;
   } catch (error) {
     console.log(error.config);
     if (error.response) {
-      throw Error('Ooops. Something went wrong... Try  again!');
+      throw Error('Ой! Щось пішло не так... Спробуйте ще раз!');
     } else if (error.request) {
-      throw Error('Ooops. Something went wrong... Try  again!');
+      throw Error('Ой! Щось пішло не так... Спробуйте ще раз!');
     } else {
       throw error;
     }
@@ -30,16 +30,16 @@ export const getMovieById = async movieId => {
       `/movie/${movieId}?api_key=${KEY}&language=en-US`
     );
     if (response.data.length === 0) {
-      throw Error('No movies found!');
+      throw Error('Фільм не знайдено!');
     }
     // console.log(response.data);
 
     return response.data;
   } catch (error) {
     if (error.response) {
-      throw Error('Ooops. Something went wrong... Try  again!');
+      throw Error('Ой! Щось пішло не так... Спробуйте ще раз!');
     } else if (error.request) {
-      throw Error('Ooops. Something went wrong... Try  again!');
+      throw Error('Ой! Щось пішло не так... Спробуйте ще раз!');
     } else {
       throw error;
     }
@@ -52,16 +52,16 @@ export const getCast = async movieId => {
       `/movie/${movieId}/credits?api_key=${KEY}&language=en-US`
     );
     if (!response.data.cast.length) {
-      throw Error('No casts found!');
+      throw Error('Актора не знайдено!');
     }
     // console.log(response.data.cast);
 
     return response.data.cast;
   } catch (error) {
     if (error.response) {
-      throw Error('Ooops. Something went wrong... Try  again!');
+      throw Error('Ой! Щось пішло не так... Спробуйте ще раз!');
     } else if (error.request) {
-      throw Error('Ooops. Something went wrong... Try  again!');
+      throw Error('Ой! Щось пішло не так... Спробуйте ще раз!');
     } else {
       throw error;
     }
@@ -74,16 +74,16 @@ export const getReviews = async movieId => {
       `/movie/${movieId}/reviews?api_key=${KEY}&language=en-US`
     );
     if (!response.data.results.length) {
-      throw Error('No reviews found!');
+      throw Error('Фільм не знайдено!');
     }
     // console.log(response.data.results);
 
     return response.data.results;
   } catch (error) {
     if (error.response) {
-      throw Error('Ooops. Something went wrong... Try  again!');
+      throw Error('Ой! Щось пішло не так... Спробуйте ще раз!');
     } else if (error.request) {
-      throw Error('Ooops. Something went wrong... Try  again!');
+      throw Error('Ой! Щось пішло не так... Спробуйте ще раз!');
     } else {
       throw error;
     }
@@ -96,15 +96,15 @@ export const searchMovies = async searchQuery => {
       `/search/movie?api_key=${KEY}&query=${searchQuery}&language=en-US&page=1&include_adult=false`
     );
     if (!response.data.results.length) {
-      throw Error('No movies found!!');
+      throw Error('Фільм не знайдено!');
     }
 
     return response.data.results;
   } catch (error) {
     if (error.response) {
-      throw Error('Ooops. Something went wrong... Try  again!');
+      throw Error('Ой! Щось пішло не так... Спробуйте ще раз!');
     } else if (error.request) {
-      throw Error('Ooops. Something went wrong... Try  again!');
+      throw Error('Ой! Щось пішло не так... Спробуйте ще раз!');
     } else {
       throw error;
     }

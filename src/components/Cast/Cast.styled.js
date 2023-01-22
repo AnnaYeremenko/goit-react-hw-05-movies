@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const ItemCast = styled.li`
   padding-top: 40px;
   padding-left: 100px;
+  list-style: none;
 `;
 
 export const Image = styled.img`

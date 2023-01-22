@@ -7,4 +7,6 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   padding-bottom: 10px;
+  list-style: none;
+  text-decoration: none;
 `;

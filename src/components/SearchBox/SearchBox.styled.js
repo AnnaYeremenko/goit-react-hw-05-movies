@@ -55,7 +55,7 @@ export const Button = styled.button`
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #ff9999;
+  background-color: #FA8072;
   opacity: 0.6;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
