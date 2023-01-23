@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 
-import { getReviews } from '../API/Api';
+import { getReviews } from '../API/API2';
 import { ParagraphRev, TitleReviews } from './Reviews.styled';
 
 const Reviews = () => {

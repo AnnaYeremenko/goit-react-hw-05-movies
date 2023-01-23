@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 
 import { MovieList } from '../../components/MovieList/MovieList';
-import { getMovies } from '../../components/API/Api';
+import { getMovies } from '../../components/API/API2';
 import { Title } from './Home.styled';
 
 const Home = () => {
