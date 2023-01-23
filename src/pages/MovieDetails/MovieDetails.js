@@ -3,7 +3,7 @@ import { BackLink } from '../../components/BackLink/BackLink';
 import { useState, useEffect, Suspense } from 'react';
 import { toast } from 'react-toastify';
 
-import { getMovieById } from '../../components/API/API2';
+import { getMovieById } from '../../components/API/Api';
 import posterDefault from '../../img/posterMovie.png';
 import { Loader } from 'components/Loader/Loader';
 import {

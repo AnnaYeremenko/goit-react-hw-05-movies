@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 
 import posterDefault from 'img/posterMovie.png';
-import { getCast } from '../API/API2';
+import { getCast } from '../API/Api';
 import { ItemCast, Image, ParagraphCast } from './Cast.styled';
 
 const Cast = () => {
